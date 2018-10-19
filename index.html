@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+    	<meta charset="UTF-8">
+	<title>Curacao con On Vacation</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans|Roboto:900" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.scrollTo-1.4.2-min.js"></script>
+
+	<style>
+
+	body {
+		margin: 0;
+		font-family: 'PT Sans', sans-serif;
+
+		}
+
+	h1, h3 {
+		color: #FBF2C0;
+		margin: 0;
+		line-height: .9em;
+	}
+
+	h1 {
+	
+		font-family: 'Roboto', sans-serif;
+		font-size: 70px;
+	}
+		
+	h3 {
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 40px;
+		letter-spacing: 4px;
+	}
+
+	p {
+		font-size: 31px;
+	}
+		.cabecera {
+
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+			position: fixed;
+
+			width: 100vw;		
+
+		}
+
+		.onvacation_logo {
+
+			position: relative;
+
+			left: -85px;
+		}
+
+		.intro	{
+
+			
+			height: 100vh;
+			background-image: url("img/intro.jpg");
+			background-attachment: fixed;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo_nelson {
+			position: relative;
+    		right: -34px;
+		}
+
+		.titulo {
+
+			padding: 120px 0 50px 70px;
+			width: 80vw;			
+			background-color:  #FC6336;
+			position: relative;
+    		float: right;
+    		top: -110px;
+
+
+		}
+
+		
+		.tituloresto {
+
+			padding: 120px 0 50px 70px;
+						
+			background-color:  #FC6336;
+			position: relative;
+    		
+    		top: -110px;
+
+    		margin-top: 160px;
+
+
+		}
+
+
+
+		.logoCuracao {
+
+			margin: 0;
+		}
+
+		.subtitulo {
+
+			background-color: #48392A;
+			width: 50%;
+			height: auto;
+			padding: 35px;
+			color: #FBF2C0;
+			margin-top: 90px;
+		}
+
+		.separador {
+			background-color: #FBF2C0;
+			height: 3px;
+			margin-top: 25px;
+		}
+
+		.isla_colores {
+			margin-top: 70vh;
+			background-image: url("img/islacolores.jpg");
+			height: 100vh;
+			padding: 100px 200px;	
+			background-size: 200%;
+			overflow: hidden;
+			background-position: 0 -3cm;
+			
+		}
+
+		.right {
+			float: right;
+		}
+
+		.center {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		
+
+		}
+
+		.hotel {
+
+			background-image: url("img/clarion.jpg");
+			position: relative;
+			
+		}
+
+		.clarion {
+			text-align: center;
+		}
+
+		.tabla {
+			display: flex;
+			width: 400px;			
+		}
+
+		.der {
+			
+			background-color: #FC6336;
+
+			
+			padding:2em 2em 2em 0;
+			line-height: 2;
+			color: #FBF2C0;
+		}
+
+		.noincluye {
+			background-color: #48392A;
+		}
+
+		.izq {
+			border: 3px solid #FC6336;
+			border-radius: .5em 0 0 .5em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			width: 142px;
+			height: 200px;
+			flex-direction: column;
+			line-height: 3;
+
+		}
+
+		.izq p {
+			margin:0;
+		}
+
+		.contenedor_tablas {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+		}
+
+		.iconos_todo_incluido {
+			margin-top: 50px;
+			display: flex;
+			justify-content: space-around;
+
+		}
+
+		.imagen_todo_incluido {
+			background-image: url("img/allinclusive.jpg");
+			width: 100%;
+			height: 500px;
+			z-index: -1;
+			position: relative;
+			top:-80px;
+			background-attachment: fixed;
+		}
+
+		
+
+		.contenedor_paseos {
+			margin: 0;
+			width: 100%;
+			height: 800px;
+			border-collapse: collapse;
+
+			
+		}
+
+		.a {
+			background: url("img/buceo.jpg") 50% 100cm  no-repeat fixed;
+			background-size: 100%;
+			
+		}
+
+		.b {
+			background: url("img/punda.jpg") 50% 100cm  no-repeat fixed;
+			background-size: 110%;
+		}
+
+		.c {
+			background: url("img/castillo.jpg")50% 100cm  no-repeat fixed;
+			background-size: 125%;
+		}
+
+		.d {
+			background: url("img/delfines.jpg")50% 100cm  no-repeat fixed;
+			background-size: 135%;
+		}
+
+		.e {
+			background: url("img/mambob.jpg")50% 100cm  no-repeat fixed;
+			background-size: 135%;
+		}
+
+		.f {
+			background: url("img/playa.jpg")50% 100cm  no-repeat fixed;
+			background-size: 155%;
+		}
+
+		.g {
+			background: url("img/playa2.jpg")50% 100cm  no-repeat fixed;
+			background-size: 165%;
+		}
+
+		.h {
+			background: url("img/vuelo.jpg") 10%   no-repeat fixed;
+			background-size: 120%;
+			
+		}
+
+		.i {
+			background: url("img/aeropuerto.jpg") 50%   no-repeat fixed;
+			background-size: 130%;
+			
+		}
+
+
+
+
+	
+
+	</style>
+    
+    </head>
+
+
+    <body>
+
+    	<section class="cabecera"> 
+
+    		<p class="logo_nelson">
+    			<img src="img/logoNelson.png" width="105px" alt="">
+    		</p>
+
+
+    		<div class="contacto">
+    			
+	    		<p>Reserva yá</p>
+
+	    		<div >
+	    			
+		    		<i class="fab fa-facebook fa-3x"></i>
+					<i class="fab fa-instagram fa-3x "></i>
+					<i class="fab fa-youtube fa-3x "></i>
+					<i class="fab fa-whatsapp-square fa-3x"></i>
+	    			
+	    		</div>
+    			
+    		</div>
+
+
+			<p class="onvacation_logo">
+    			<img src="img/onvacation.png" width="130px" alt="">
+    		</p>
+
+
+
+    	</section>
+
+    	<section>
+
+    		<div class="intro">
+    			
+    			<p class="logoCuracao">
+    				<img src="img/logoCuracao.png" alt="">
+    			</p>
+    		</div>
+
+    		<div class="titulo">
+
+    			<h3>LOS VIAJEROS INTELIGENTES </h3> <br>
+
+    			<h1>VIENEN A CURACAO</h1>
+
+    			<div class="subtitulo">
+
+    				<p>¿Estás listo para vivir una experiencia inolvidable en Curaçao? Podemos ayudarte a planear las mejores vacaciones de tu vida en esta isla caribeña escondida pero cautivadora. Las posibilidades son ilimitadas. ¡Empieza a planear hoy mismo!</p>
+    				
+    			</div>
+
+    			<hr class="separador">
+    			
+    		</div>
+
+    	
+    		
+
+    	</section>
+
+    	<hr class="separador">
+    	
+
+    	<section>
+    		
+    		<div class="isla_colores" id="intro">
+
+    			<h3>La isla </h3> <br>
+
+    			<h1>de los colores</h1>
+
+    			<div class="subtitulo">
+
+    				<p>Curazao, es un territorio autónomo del Reino de los Países Bajos con superficie de 444 km².​ Está situado en el sur del mar de las Antillas, a unos 50 km de la  costa noroccidental de Venezuela, y pertenece al grupo de las islas de Sotavento, junto con sus islas vecinas de Aruba y Bonaire. Hasta 2010 formó parte de las Antillas Neerlandesas. Su capital y localidad más poblada es Willemstad, ubicada al sur de la isla </p>
+    				
+    			</div>
+
+    			<div class="subtitulo right">
+
+    				<p>Existen varias versiones sobre el origen del nombre Curazao. Una de ellas afirma que cuando los portugueses llegaron a la isla, vieron que los marineros que padecían escorbuto se curaron tras desembarcar, seguramente gracias a la gran cantidad de frutas que consumieron. Por ello, bautizaron la isla como Ilha da Curação (en portugués, «Isla de la Curación»). Tras la conquista neerlandesa el nombre quedó finalmente como Curaçao. Fuente: https://es.wikipedia.org/wiki/Curazao</p>
+    				
+    			</div>
+    			
+    		</div>
+
+    		 <div class="subtitulo ">
+
+    				<p>La Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura (UNESCO) está comprometida a preservar la cultura y el patrimonio de las grandes ciudades del mundo y el listado de lugares catalogados como Patrimonio Mundial más reciente incluye sitios como: las Pirámides de Egipto, la Gran Barrera de Coral en Australia, el Serengueti al oriente de África y Willemstad en Curaçao.
+
+					En 1997, el comité del Patrimonio Mundial de la UNESCO escogió este centro histórico (uno de tan solo seis sitios elegidos del Caribe) gracias a su “destacado valor e integridad que ilustra el crecimiento orgánico de una comunidad multicultural durante los últimos tres siglos, preservando en gran medida los elementos significativos”.
+
+					Para obtener más información visite: www.unesco.org</p>
+    				
+    			</div>
+
+    			<div class="center">
+    				
+	    			<p >
+	    				<img src="img/unesco.png" alt="logo unesco" width="300px">
+	    			</p>
+    				
+    			</div>
+
+    	</section>
+    	
+
+    	<section class="hotel">
+
+    	<div class="tituloresto">
+
+    		<h3>Nuestro </h3> <br>
+
+    		<h1>Hotel</h1>    			
+    			
+    	</div>
+
+    	<div >    		
+
+    		<div class="subtitulo clarion">
+    			
+    			<h1 style="font-size: 50px;"> CLARION HOTEL </h1>  <h3 style="font-size: 33px"> AND SUITES CURAÇAO </h3> <hr>
+				Con su propia playa, el Clarion Hotel® & Suites Curaçao es el hotel perfecto para todo el mundo.   
+    		</div>
+
+    		<div class="subtitulo">
+    			
+    			Este hotel de Willemstad se encuentra en la isla de Curaçao, la cual es parte de las Antillas Holandesas.
+
+				Este hotel se conecta con el servicio de convenciones del World Trade Center Curaçao, que ofrece 17 cuartos de reuniones que pueden alojar hasta 2,000 personas. Con lo último en equipamiento, rápido acceso a Internet y un auditorio, el World Trade Center Curaçao es el lugar perfecto para un evento o función de negocios.
+	
+				Todas las habitaciones vienen equipadas con refrigeradores, cafeteras, planchas, tablas de planchar, mini bars, caja fuerte, secador, correo de voz y televisión cable. Hay habitaciones accesibles para personas con discapacidad y cuartos para no fumadores. Las suites tienen también cocina.
+
+				Servicio de lavandería, alquiler de botes, tienda de regalos y un mostrador de paseos están localizados en la propiedad como conveniencia para los huéspedes.
+
+				A distancia de ir caminando, hay una linda playa con servicios de buceo.
+
+				Fuente: https://www.curacao.com/es/directory/Alojese/grandes-hoteles/clarion-hotel-and-suites-curacao/# 
+    		</div>
+    	</div>   
+
+    	</section>			
+    	
+
+    	<section class="todo_incluido">
+
+    		<div class="tituloresto">
+
+    		<h3>Como es nuestro </h3> <br>
+
+    		<h1>plan todo incluido	</h1> 
+
+    			
+    	</div>
+
+    	<div class="contenedor_tablas">
+    		
+	    	<div class="tabla">
+	    			<div class="izq">
+
+	    				<p style="color:#FC6336;">Nuestro plan	</p> 
+	    				
+
+	    				<p> <strong>Incluye</strong>	</p>
+	    				
+	    			</div>
+	    			<div class="der">
+	    				<ul>
+
+	    					<li>
+	    						Tiquetes aéreos ida y regreso.
+	    					</li>
+	    					
+	    					<li>
+								Traslado aeropuerto - hotel - aeropuerto.
+	    						
+	    					</li>
+
+	    					<li>
+	    						
+								Alojamiento según ciclo de fechas de viaje.
+	    						
+	    					</li>
+
+	    					<li>
+	    						
+								Desayuno, almuerzo y cena tipo buffet.
+	    					</li>
+
+	    					<li>
+								Bebidas y licores.
+	    						
+	    					</li>
+
+	    					<li>
+	    						
+								Snacks en la tarde.
+	    						
+	    					</li>
+
+	    				</ul>
+	    				
+	    			</div>
+	    	</div>  
+
+	    	<div class="tabla">
+	    			<div class="izq">
+
+	    				<p style="color:#FC6336;">Nuestro plan	</p> 
+	    				
+
+	    				<p> <strong>NO incluye</strong>	</p>
+	    				
+	    			</div>
+	    			<div class="der noincluye">
+	    				<ul>
+
+	    					<li>
+	    						Entrada a sitios turísticos.
+	    					</li>
+	    					
+	    					<li>
+								Transporte y alimentación no relacionada.
+	    						
+	    					</li>
+
+	    					<li>
+	    						
+								Paseos en destino.
+	    						
+	    					</li>	    					
+
+	    				</ul>
+	    				
+	    			</div>
+	    	</div>   			
+    		
+    	</div>
+
+    	<div class="iconos_todo_incluido">
+    		
+    		<p> <img src="img/hotel.png" alt=""></p>
+    		<p> <img src="img/food.png" alt=""></p>
+    		<p> <img src="img/taxi.png" alt=""></p>
+    		<p> <img src="img/snack.png" alt="" ></p>
+    		<p> <img src="img/avion.png" alt="" ></p>
+			<p> <img src="img/drink.png" alt="" ></p>
+
+    	</div>
+
+    	<div class="imagen_todo_incluido">
+    		
+    	</div>
+    		
+ 			
+
+    	</section>
+    	
+
+    	<section>
+    		
+    		<div class="tituloresto">
+    			
+    			<div><h1>Haz</h1></div>
+    			<div><h1>descubre</h1></div>
+    			<div><h1>prueba</h1></div>
+    			<div><h1>diviertete</h1></div>
+    			<div><h1>conoce</h1></div>
+
+    		</div>
+
+    		<div class="contenedor_paseos a bg" ></div>
+    		<div class="contenedor_paseos b bg" ></div>
+    		<div class="contenedor_paseos c bg" ></div>
+    		<div class="contenedor_paseos d bg" ></div>
+    		<div class="contenedor_paseos e bg" ></div>
+    		<div class="contenedor_paseos f bg" ></div>
+    		<div class="contenedor_paseos g bg" ></div>
+
+    	</section>
+    	
+
+    	<section>
+    		<div class="tituloresto">
+
+    			<div><h1>Tips</h1></div>
+    			<div><h1>ciudad de destino</h1></div>
+    			<div><h1>CURAZAO</h1></div>
+
+
+    			
+    		</div>
+
+    		<div class="contenedor_paseos h bg" ></div>
+    		<div class="contenedor_paseos i bg" ></div>
+    	</section>
+
+<script>
+	
+	
+	$(document).ready(function(){
+	$('#nav').localScroll(800);
+	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", -0.2);
+	$('#second').parallax("50%", 0.1);
+	$('.bg').parallax("50%", .1);
+	$('#third').parallax("50%", 0.3);
+
+})
+</script>
+    	 
+            
+    </body>
+  </html>
+
+
+  
