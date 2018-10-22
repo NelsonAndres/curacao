@@ -9,6 +9,8 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+
 
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
@@ -17,6 +19,16 @@
 <script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.scrollTo-1.4.2-min.js"></script>
 
 	<style>
+
+	
+
+	/* 
+		paleta de colores
+	#FBF2C0 crema
+	#FC6336 naranja
+	#48392A cafe claro
+	#43281C cafe oscuro
+	#C06E52 rojizo*/
 
 	body {
 		margin: 0;
@@ -32,18 +44,25 @@
 
 	h1 {
 	
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Arial', sans-serif;
 		font-size: 70px;
 	}
 		
 	h3 {
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Arial', sans-serif;
 		font-size: 40px;
 		letter-spacing: 4px;
+		letter-spacing: -.5px;
 	}
 
-	p {
-		font-size: 31px;
+	p {	
+		font-family: 'Raleway', sans-serif; 
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+	span {
+		font-size: 28px;
 	}
 		.cabecera {
 
@@ -65,11 +84,12 @@
 
 		.intro	{
 
+			background-size: cover;
+			background-attachment: fixed;
+
 			
 			height: 100vh;
-			background-image: url("img/intro.jpg");
-			background-attachment: fixed;
-			background-position: center;
+			background-image: url("img/intro.jpg");			
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -84,7 +104,7 @@
 
 			padding: 120px 0 50px 70px;
 			width: 80vw;			
-			background-color:  #FC6336;
+			background-image:url('img/fondo.jpg');
 			position: relative;
     		float: right;
     		top: -110px;
@@ -116,12 +136,11 @@
 
 		.subtitulo {
 
-			background-color: #48392A;
-			width: 50%;
-			height: auto;
-			padding: 35px;
+			background-color: rgba(72, 57, 42, .8);			
+			padding: 15px;
 			color: #FBF2C0;
 			margin-top: 90px;
+			width: 580px;
 		}
 
 		.separador {
@@ -134,21 +153,22 @@
 			margin-top: 70vh;
 			background-image: url("img/islacolores.jpg");
 			height: 100vh;
-			padding: 100px 200px;	
-			background-size: 200%;
-			overflow: hidden;
+			width: 1fr;
+			padding: 100px 0 100px 50px;	
+			background-size: 200%;			
 			background-position: 0 -3cm;
 			
 		}
 
-		.right {
-			float: right;
-		}
+	.right {
+		margin-top: 0;
+	}
 
 		.center {
 			width: 100%;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 		
 
 		}
@@ -284,6 +304,34 @@
 			
 		}
 
+		.isla_colores_mapa {
+			display: flex;			
+			justify-content: center;
+			align-items: center;
+		}
+
+		.isla_colores_nombre {
+			display: flex;			
+			justify-content: center;
+			align-items: center;
+			margin-top: 200px;
+		}
+
+			.unesco {
+
+			background-color: rgba(72, 57, 42, .8);			
+			padding: 15px 30px;
+			color: #FBF2C0;
+			margin-top: 90px;	
+			margin-top: 300px;		
+		}
+
+		.piramide {
+			max-width: 300px;
+		}
+
+
+
 
 
 
@@ -344,7 +392,9 @@
 
     			<div class="subtitulo">
 
-    				<p>¿Estás listo para vivir una experiencia inolvidable en Curaçao? Podemos ayudarte a planear las mejores vacaciones de tu vida en esta isla caribeña escondida pero cautivadora. Las posibilidades son ilimitadas. ¡Empieza a planear hoy mismo!</p>
+    				<p> <span>
+    					¿Estás listo para vivir una experiencia inolvidable en Curaçao?
+    				</span>	  Podemos ayudarte a planear las mejores vacaciones de tu vida en esta isla caribeña escondida pero cautivadora. Las posibilidades son ilimitadas. ¡Empieza a planear hoy mismo!</p>
     				
     			</div>
 
@@ -368,27 +418,59 @@
 
     			<h1>de los colores</h1>
 
-    			<div class="subtitulo">
+    			<div class="isla_colores_mapa">
+    				
+	    			<div class="subtitulo">
 
-    				<p>Curazao, es un territorio autónomo del Reino de los Países Bajos con superficie de 444 km².​ Está situado en el sur del mar de las Antillas, a unos 50 km de la  costa noroccidental de Venezuela, y pertenece al grupo de las islas de Sotavento, junto con sus islas vecinas de Aruba y Bonaire. Hasta 2010 formó parte de las Antillas Neerlandesas. Su capital y localidad más poblada es Willemstad, ubicada al sur de la isla </p>
+	    				<p> <span> Curazao, es un territorio autónomo del Reino de los Países Bajos con superficie de 444 km².​ </span> <br><br> Está situado en el sur del mar de las Antillas, a unos 50 km de la  costa noroccidental de Venezuela, y pertenece al grupo de las islas de Sotavento, junto con sus islas vecinas de Aruba y Bonaire. <br><br> Hasta 2010 formó parte de las Antillas Neerlandesas. Su capital y localidad más poblada es Willemstad, ubicada al sur de la isla </p>
+	    				
+	    			</div>
+
+	    			<div class="div">
+	    				<figure>
+	    					<img src="img/mapacuracao.png" alt="">
+	    				</figure>
+
+	    			</div>
     				
     			</div>
 
-    			<div class="subtitulo right">
 
-    				<p>Existen varias versiones sobre el origen del nombre Curazao. Una de ellas afirma que cuando los portugueses llegaron a la isla, vieron que los marineros que padecían escorbuto se curaron tras desembarcar, seguramente gracias a la gran cantidad de frutas que consumieron. Por ello, bautizaron la isla como Ilha da Curação (en portugués, «Isla de la Curación»). Tras la conquista neerlandesa el nombre quedó finalmente como Curaçao. Fuente: https://es.wikipedia.org/wiki/Curazao</p>
-    				
-    			</div>
+				<div class="isla_colores_nombre">
+					
+	    			<div class="subtitulo right">
+
+	    				<p><span>El origen del nombre Curazao:</span> <br><br>
+
+							Cuando los portugueses llegaron a la isla, vieron que los marineros que padecían escorbuto se curaron tras desembarcar, seguramente gracias a la gran cantidad de frutas que consumieron. <br><br>
+
+							Por ello, bautizaron la isla como Ilha da Curação (en portugués, «Isla de la Curación»). Tras la conquista neerlandesa el nombre quedó finalmente como Curaçao. <br><br>
+
+							Fuente: https://es.wikipedia.org/wiki/Curazao</p>
+	    				
+	    			</div>
+					<div class="div">
+		    				<figure>
+		    					<img src="img/barco.png" alt="">
+		    				</figure>
+
+		    		</div>
+
+				</div>
+
+
     			
     		</div>
 
-    		 <div class="subtitulo ">
+    		 <div class="unesco ">
 
-    				<p>La Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura (UNESCO) está comprometida a preservar la cultura y el patrimonio de las grandes ciudades del mundo y el listado de lugares catalogados como Patrimonio Mundial más reciente incluye sitios como: las Pirámides de Egipto, la Gran Barrera de Coral en Australia, el Serengueti al oriente de África y Willemstad en Curaçao.
+    				<p>La Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura (UNESCO) está comprometida a preservar la cultura y el patrimonio de las grandes ciudades del mundo y el listado de lugares catalogados como Patrimonio Mundial más reciente incluye sitios como: las Pirámides de Egipto, la Gran Barrera de Coral en Australia, el Serengueti al oriente de África y Willemstad en Curaçao. <br><br>
 
-					En 1997, el comité del Patrimonio Mundial de la UNESCO escogió este centro histórico (uno de tan solo seis sitios elegidos del Caribe) gracias a su “destacado valor e integridad que ilustra el crecimiento orgánico de una comunidad multicultural durante los últimos tres siglos, preservando en gran medida los elementos significativos”.
+					<span>En 1997, el comité del Patrimonio Mundial de la UNESCO escogió este centro histórico (uno de tan solo seis sitios elegidos del Caribe) gracias a su “destacado valor e integridad que ilustra el crecimiento orgánico de una comunidad multicultural durante los últimos tres siglos, preservando en gran medida los elementos significativos”. <br><br>
 
-					Para obtener más información visite: www.unesco.org</p>
+					Para obtener más información visite: www.unesco.org
+					</span>
+					</p>	
     				
     			</div>
 
@@ -396,6 +478,10 @@
     				
 	    			<p >
 	    				<img src="img/unesco.png" alt="logo unesco" width="300px">
+	    			</p>
+
+	    			<p>
+	    				<img class="piramide" src="img/piramides.jpg" alt="">
 	    			</p>
     				
     			</div>
@@ -421,11 +507,8 @@
 				Con su propia playa, el Clarion Hotel® & Suites Curaçao es el hotel perfecto para todo el mundo.   
     		</div>
 
-    		<div class="subtitulo">
-    			
-    			Este hotel de Willemstad se encuentra en la isla de Curaçao, la cual es parte de las Antillas Holandesas.
-
-				Este hotel se conecta con el servicio de convenciones del World Trade Center Curaçao, que ofrece 17 cuartos de reuniones que pueden alojar hasta 2,000 personas. Con lo último en equipamiento, rápido acceso a Internet y un auditorio, el World Trade Center Curaçao es el lugar perfecto para un evento o función de negocios.
+    		<div class="subtitulo">    			
+   				Este hotel se conecta con el servicio de convenciones del World Trade Center Curaçao, que ofrece 17 cuartos de reuniones que pueden alojar hasta 2,000 personas. Con lo último en equipamiento, rápido acceso a Internet y un auditorio, el World Trade Center Curaçao es el lugar perfecto para un evento o función de negocios.
 	
 				Todas las habitaciones vienen equipadas con refrigeradores, cafeteras, planchas, tablas de planchar, mini bars, caja fuerte, secador, correo de voz y televisión cable. Hay habitaciones accesibles para personas con discapacidad y cuartos para no fumadores. Las suites tienen también cocina.
 
@@ -594,6 +677,16 @@
     	</section>
 
 <script>
+
+	/*function parallax() {
+		let n = window.pageYOffset;
+
+		let intro = document.getElementById('intro')
+
+		intro.style.backgroundPositionY =  n/2 + 'px';
+
+
+	}*/
 	
 	
 	$(document).ready(function(){
@@ -603,7 +696,7 @@
 	//xPosition - Horizontal position of the element
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#intro').parallax("50%", -0.2);
+	/*$('#intro').parallax("50%", -0.2);*/
 	$('#second').parallax("50%", 0.1);
 	$('.bg').parallax("50%", .1);
 	$('#third').parallax("50%", 0.3);
