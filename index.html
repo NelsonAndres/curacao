@@ -14,9 +14,9 @@
 
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.localscroll-1.2.7-min.js"></script>
-<script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.scrollTo-1.4.2-min.js"></script>
+	<script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="text/javascript" src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.scrollTo-1.4.2-min.js"></script>
 
 	<style>
 
@@ -108,6 +108,7 @@
 			position: relative;
     		float: right;
     		top: -110px;
+    		background-attachment: fixed;
 
 
 		}
@@ -115,10 +116,11 @@
 		
 		.tituloresto {
 
-			padding: 120px 0 50px 70px;
+			padding: 100px;
 						
-			background-color:  #FC6336;
+			background-image: url("img/fondo.jpg");	
 			position: relative;
+			background-attachment: fixed;
     		
     		top: -110px;
 
@@ -139,8 +141,26 @@
 			background-color: rgba(72, 57, 42, .8);			
 			padding: 15px;
 			color: #FBF2C0;
-			margin-top: 90px;
+			margin: 90px 15px 0 15px;
 			width: 580px;
+			font-family: 'Raleway', sans-serif; 
+			
+		}
+
+		.subtitulo.clarion {
+			position: absolute;
+    		top: 71px;
+    		left: 52px;
+    		background-color: rgb(72, 57, 42);
+		}
+
+		.subtitulo-sinfondo {
+
+			font-family: 'Raleway', sans-serif;
+			font-size: 28px;
+			color: rgb(72, 57, 42);
+			padding: 3em;
+
 		}
 
 		.separador {
@@ -155,7 +175,7 @@
 			height: 100vh;
 			width: 1fr;
 			padding: 100px 0 100px 50px;	
-			background-size: 200%;			
+			background-size: 150%;			
 			background-position: 0 -3cm;
 			
 		}
@@ -177,11 +197,14 @@
 
 			background-image: url("img/clarion.jpg");
 			position: relative;
+			height: 120vh;
+			background-attachment: fixed;
+			background-size: cover;
 			
 		}
 
 		.clarion {
-			text-align: center;
+			padding: 40px;
 		}
 
 		.tabla {
@@ -257,8 +280,9 @@
 		}
 
 		.a {
-			background: url("img/buceo.jpg") 50% 100cm  no-repeat fixed;
-			background-size: 100%;
+			background: url("img/buceo.jpg")  50% 100cm  no-repeat fixed;
+			background-size: 110%;
+			height: 150vh;
 			
 		}
 
@@ -295,12 +319,14 @@
 		.h {
 			background: url("img/vuelo.jpg") 10%   no-repeat fixed;
 			background-size: 120%;
+			height: 250vh;
 			
 		}
 
 		.i {
 			background: url("img/aeropuerto.jpg") 50%   no-repeat fixed;
 			background-size: 130%;
+			height: 250vh;
 			
 		}
 
@@ -329,6 +355,54 @@
 		.piramide {
 			max-width: 300px;
 		}
+
+		.contenedor-hotel {
+    		position: absolute;
+			display: flex;
+			bottom: 50px;
+			width: 90vw;
+			margin:0;
+			left: 2em;
+		}
+
+		.iconos_hotel {
+			background-image:url('img/fondo.jpg');
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+
+			margin:3em 0;
+
+		}
+
+		.fotos_hotel {
+			margin: 3em;
+			text-align: center;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap:10em;	
+			grid-column-gap: 10px;
+		}
+
+		.hotel-foto {
+			
+		}
+
+		.texto-paseos-blanco {
+			color: #FBF2C0;
+		}
+
+		.contenedor-textos-paseos{
+			width: 650px;
+    		padding: 3em;
+    		background-color: rgba(72, 57, 42, .4);
+		}
+
+		.contenedor-textos-paseos.right {
+			float: right;
+		}
+
+
 
 
 
@@ -489,36 +563,122 @@
     	</section>
     	
 
-    	<section class="hotel">
+    	<section>
 
-    	<div class="tituloresto">
-
-    		<h3>Nuestro </h3> <br>
-
-    		<h1>Hotel</h1>    			
+    		<div class="hotel">
     			
-    	</div>
 
-    	<div >    		
+    	
 
-    		<div class="subtitulo clarion">
-    			
-    			<h1 style="font-size: 50px;"> CLARION HOTEL </h1>  <h3 style="font-size: 33px"> AND SUITES CURAÇAO </h3> <hr>
-				Con su propia playa, el Clarion Hotel® & Suites Curaçao es el hotel perfecto para todo el mundo.   
+		    	<div class="tituloresto">
+
+		    		<h3>Nuestro </h3> <br>
+
+		    		<h1>Hotel</h1>    			
+		    			
+		    	</div>
+
+    	   		
+
+		    	<div class="subtitulo clarion">
+		    			
+		    			<h1 style="font-size: 50px;"> CLARION HOTEL </h1>  <h3 style="font-size: 33px"> AND SUITES CURAÇAO </h3> <hr>
+						Con su propia playa, el Clarion Hotel® & Suites Curaçao es el hotel perfecto para todo el mundo.   
+		    	</div>
+
+		    	<div class="contenedor-hotel">
+		    		
+			    		<div class="subtitulo">    			
+			   				Este hotel se conecta con el servicio de convenciones del World Trade Center Curaçao, que ofrece 17 cuartos de reuniones que pueden alojar hasta 2,000 personas. Con lo último en equipamiento, rápido acceso a Internet y un auditorio, el World Trade Center Curaçao es el lugar perfecto para un evento o función de negocios.				
+			    		</div>
+
+			    		<div class="subtitulo">    			
+			   				
+							Todas las habitaciones vienen equipadas con refrigeradores, cafeteras, planchas, tablas de planchar, mini bars, caja fuerte, secador, correo de voz y televisión cable. Hay habitaciones accesibles para personas con discapacidad y cuartos para no fumadores. Las suites tienen también cocina.	
+
+			    		</div>   
+		    		
+		    	</div>
+
+
+
+
     		</div>
+			    	<div class="iconos_hotel">
+			    		<p>
+			    			<img src="img/gente.png" alt="">
+			    		</p>
 
-    		<div class="subtitulo">    			
-   				Este hotel se conecta con el servicio de convenciones del World Trade Center Curaçao, que ofrece 17 cuartos de reuniones que pueden alojar hasta 2,000 personas. Con lo último en equipamiento, rápido acceso a Internet y un auditorio, el World Trade Center Curaçao es el lugar perfecto para un evento o función de negocios.
-	
-				Todas las habitaciones vienen equipadas con refrigeradores, cafeteras, planchas, tablas de planchar, mini bars, caja fuerte, secador, correo de voz y televisión cable. Hay habitaciones accesibles para personas con discapacidad y cuartos para no fumadores. Las suites tienen también cocina.
+			    		<p>
+			    			<img src="img/wifi.png" alt="">
+			    		</p>
 
-				Servicio de lavandería, alquiler de botes, tienda de regalos y un mostrador de paseos están localizados en la propiedad como conveniencia para los huéspedes.
+			    		<p>
+			    			<img src="img/cajafuerte.png" alt="">
+			    		</p>
 
-				A distancia de ir caminando, hay una linda playa con servicios de buceo.
+			    		<p>
+			    			<img src="img/gancho.png" alt="">
+			    		</p>
 
-				Fuente: https://www.curacao.com/es/directory/Alojese/grandes-hoteles/clarion-hotel-and-suites-curacao/# 
-    		</div>
-    	</div>   
+			    		<p>
+			    			<img src="img/regalo.png" alt="">
+			    		</p>
+
+			    		<p>
+			    			<img src="img/isla.png" alt="">
+			    		</p>
+
+			    	</div>
+	    		<div class="subtitulo-sinfondo">     			
+
+					Servicio de lavandería, alquiler de botes, tienda de regalos y un mostrador de paseos están localizados en la propiedad como conveniencia para los huéspedes.
+					<br><br>
+
+					A distancia de ir caminando, hay una linda playa con servicios de buceo.
+					<br><br>
+
+					Fuente: https://www.curacao.com/es/directory/Alojese/grandes-hoteles/clarion-hotel-and-suites-curacao/# 
+	    		</div>
+
+	    		<div class="fotos_hotel">
+			    		
+			    		<p class="hotel-foto">
+			    			<img src="img/clarion2.jpg" width="200px" alt="">
+			    		</p>
+
+			    		<p class="hotel-foto">
+			    			<img src="img/clarion3.jpg" width="200px" alt="">
+			    		</p>
+
+			    		<p class="hotel-foto">
+			    			<img src="img/clarion4.jpg" width="350px" alt="">
+			    		</p>
+
+			    		<p class="hotel-foto">
+			    			<img src="img/clarion5.jpg" width="400px" alt="">
+			    		</p>
+
+			    		<p class="hotel-foto">
+			    			<img src="img/clarion6.jpg" width="300px" alt="">
+			    		</p >
+						<p class="hotel-foto">
+			    			<img src="img/clarion7.jpg" width="150px" alt="">
+			    		</p>
+						<p class="hotel-foto">
+			    			<img src="img/clarion8.jpg" width="250px" alt="">
+			    		</p>
+						<p class="hotel-foto">
+			    			<img src="img/clarion9.jpg" width="100px" alt="">
+			    		</p>
+						<p class="hotel-foto">
+			    			<img src="img/clarion10.jpg" width="400px" alt="">
+			    		</p>
+						<p class="hotel-foto">
+			    			<img src="img/clarion11.jpg" width="300px" alt="">
+			    		</p>
+
+			    	</div>
 
     	</section>			
     	
@@ -650,13 +810,103 @@
 
     		</div>
 
-    		<div class="contenedor_paseos a bg" ></div>
-    		<div class="contenedor_paseos b bg" ></div>
-    		<div class="contenedor_paseos c bg" ></div>
-    		<div class="contenedor_paseos d bg" ></div>
-    		<div class="contenedor_paseos e bg" ></div>
-    		<div class="contenedor_paseos f bg" ></div>
-    		<div class="contenedor_paseos g bg" ></div>
+    		<div class="contenedor_paseos a bg" >
+    			<div class="contenedor-textos-paseos">
+    				<p class="texto-paseos-blanco">Curazao ofrece infinidad de deportes y actividades:  <br><br>
+
+						<span>siempre hay algo que hacer en esta isla.</span> <br><br>
+
+						Atrévase a unirse a nosotros, descubra los deportes acuáticos y otras actividades, juegue a vóleibol playa o practique SUP en la bahía Spaanse Water (Aguas Españolas). <br><br>
+
+						Bucee y haga snorkel, móntese en una bicicleta de montaña y <span>descubra el Christoffelpark o disfrute de un agradable paseo a caballo durante la puesta de sol.</span>
+
+
+					</p>
+    			</div>
+
+    			<div class="contenedor-textos-paseos right">
+    				<p class="texto-paseos-blanco">
+    					Si le gustan los deportes terrestres, los deportes de equipo o si está buscando vivir una experiencia inolvidable con el equipo de deporte local, descubrirá que <span>los isleños disfrutan de los deportes y siempre están encantados de aceptar un desafío.  </span><br> <br>
+
+						Prepárese para todo lo que Curazao le puede para ofrecer e inspírese con estas historias.
+    				</p>
+    			</div>
+
+    		</div>
+    		<div class="contenedor_paseos b bg" >
+    			
+    			<div class="contenedor-textos-paseos">
+    				<p class="texto-paseos-blanco">Las vibrantes calles peatonales evocan un ambiente pintoresco, repleto de tiendas, cafés y terrazas convenientemente ubicados en una misma área.
+
+Paseándose por uno de los centros más hermosos en todo el mundo, usted descubrirá fantásticos sitios para tomarse fotos. Las vistosas calles y callejuelas de Punda, repletas de vida y color, lo llevan a algunas de las mejores tiendas de la isla, en donde encontrará una variedad de joyas, productos electrónicos, cosméticos, moda para damas y caballeros y suvenires de la isla. </span>
+
+
+					</p>
+    			</div>
+
+    			<div class="contenedor-textos-paseos right">
+    				<p class="texto-paseos-blanco">
+    					¡Relájese en uno de los muchos cafés y terrazas, y disfrute de un desayuno, almuerzo, o cena, o de un refrescante coctel!. Todos los jueves en la noche, Punda se convierte en el escenario del famoso Punda Vibes. La misión del Punda Vibes es procurar que usted se enamore de nuestra “dushi” Punda.
+
+¡Las actividades se organizan para garantizar una agradable noche de compras, música en vivo, excelentes shows locales y buena comida con sus familiares y amigos!. Punda también cuenta con una vibrante comunidad artística. En sus calles encontrará una variedad de murales e impresionantes tiendas de arte de artistas locales. La mayoría de las tiendas de arte están ubicadas en la calle Winsdtraat, mejor conocida como el Callejón Artístico.
+
+    				</p>
+    			</div>
+    		</div>
+    		<div class="contenedor_paseos c bg" >
+    			<div class="contenedor-textos-paseos">
+    				<p class="texto-paseos-blanco">El Fuerte Beekenburg (en neerlandés: Fort Beekenburg) ​(También conocido como El Castillo o Het Kasteel) es una fortaleza en Curazao​ en medio de la Bahía de Caracas​ (Caracasbaai) en las Antillas Menores.
+
+El Fuerte Beekenburg fue construido en 1703 con el objeto de proporcionar una mejor defensa del área contra los ataques españoles.
+
+Fue uno de los pocos lugares adecuados para acceder desde el mar a la tierra. Por lo tanto, se decidió construir una fortaleza para hacer inaccesible Willemstad a los enemigos.</span>
+
+
+					</p>
+    			</div>
+
+    			<div class="contenedor-textos-paseos right">
+    				<p class="texto-paseos-blanco">
+    					El fuerte recibe nombre de Sir Brook entre 1701 y 1704 que coordinó la defensa de la ciudad. Durante el siglo 18, la fortaleza sufrió varios ataques de las tropas francesas y británicas. En un determinado momento, los británicos trataron de eludir el fuerte usando la montaña adyacente. Sin embargo, esto causó tantos problemas y tomó tanto tiempo que el plan se suspendió y se decidió la retirada antes de que los holandeses hubiesen reunido sus tropas. De 1800 a 1803 y desde 1807 hasta 1816 Curazao estuvo bajo breve ocupación de los británicos. Varias veces Fort Beekenburg fue atacado por piratas, sin éxito.
+    				</p>
+    			</div>
+    		</div>
+    		<div class="contenedor_paseos d bg" >
+    			<div class="contenedor-textos-paseos">
+    				<p class="texto-paseos-blanco">Esnórkel en Curazao y Buceo – Un Maravilloso Mundo de Posibilidades Acuáticas
+
+Los buzos y practicantes del snórkel no pueden dejar de hablar de la belleza del mundo submarino de Curazao. Déjenme asegurarles que tenemos una buena razón. Nos gusta pensar que no hay lugar en el mundo que ofrezca tanta variedad de grandes playas para hacer submarinismo u oportunidades para disfrutar la belleza de la naturaleza del mar mientras práctica snórkel. Curazao buceo y esnórkel comprende 40 áreas que incluyen 65 sitios individuales..
+
+					</p>
+    			</div>
+
+    			
+    		</div>
+    		<div class="contenedor_paseos e bg" >
+    			<div class="contenedor-textos-paseos">
+    				<p class="texto-paseos-blanco">Mambo Beach Boulevard ofrece grandes tiendas y restaurantes. No son lugares tradicionales, pero hay marcas locales e internacionales para darse el gusto, comprar excelentes regalos, tratarse a un lindo almuerzo o hermosa cena en unos de nuestros restaurantes o tomar un trago en uno de nuestros cafés o bares.
+
+Querrá zambullirse en el océano azul claro de Sea Aquarium Beach, ¡pero cómprese primero ese nuevo bikini! Siempre hay algo en el BLVD, cada hora del día.
+
+
+					</p>
+    			</div>
+    			
+    		</div>
+    		<div class="contenedor_paseos f bg" >
+    			<div class="contenedor-textos-paseos">
+    				<p class="texto-paseos-blanco">Casi todas las playas de Curazao están diseminadas a lo largo de la calma y protegida costa suroeste, donde las aguas son calmas y limpias como un cristal. En algunas playas se cobra la admisión, algunas veces incluyendo una playera.
+A pesar de que no es común, ni una práctica aceptable, podrá ver visitantes europeas tomando el sol en topless. Por favor tome en cuenta que no está permitido por la ley, pero que es tolerado en muchas playas.
+Hay lugares de los cuales elegir para poder relajarse, incluyendo un Complejo turístico al lado del mar ganador de premios.
+
+
+					</p>
+    			</div>
+    			
+    		</div>
+    		<div class="contenedor_paseos g bg" >
+    			
+    		</div>
 
     	</section>
     	
@@ -672,8 +922,82 @@
     			
     		</div>
 
-    		<div class="contenedor_paseos h bg" ></div>
-    		<div class="contenedor_paseos i bg" ></div>
+    		<div class="contenedor-textos-paseos" style="position:absolute;">
+    				<p class="texto-paseos-blanco">Ciudades de Operación: <br>
+
+    					<ul>
+    						
+							<li>
+								Bogotá
+							</li>
+							<li>
+								Cali
+							</li>	
+							<li>
+								Medellín
+							</li>
+							
+							
+    						
+    					</ul>
+
+
+						Llegada a Aeropuerto: 9:00 p.m. <br><br>
+						Salida del vuelo: 12:00 a.m. <br> <br>
+						Duración del vuelo: 1 hora 45 minutos <br> <br>
+
+						Llegada al aeropuerto <br> <br>
+
+						<ul>
+							
+						<li> Llegada a inmigración</li>
+						<li> Recogida de los buses que llevan a los huéspedes al hotel</li>
+						<li>Trayecto para el On Vacation Curacao Beach: 20 minutos</li>
+							
+						</ul>
+
+
+						Llegada al hotel <br><br>
+
+						Check in en Hotel <br> <br> 
+
+						Reunión de toures con Fiesta Tour: 11 a.m. <br><br>
+
+						Las tarjetas de
+						Colombia débito y
+						crédito funcionan
+						en Curacao. <br> <br>
+
+						Es necesario tener
+						el pasaporte al día. <br> <br>
+						Los menores de edad que
+						viajan sin sus padres
+						debe tener el permiso de
+						salida notariado por los
+						padres. <br><br>
+
+						La hora en Curacao es
+						una hora mas que en
+						Colombia. <br><br>
+
+
+						Regreso a la cuidad de origen <br> <br>
+
+						Entrega de habitación a las 3 p.m después del almuerzo. <br>
+						Salida de hotel a Aeropuerto. <br>
+						Duracion vuelo a ciudad de origen: 1 hora y 40 minutos. <br>
+
+
+
+						Llevar cobija en su
+						equipaje de mano.
+
+
+					</p>
+    			</div>
+
+    		<div class="contenedor_paseos h bg2" ></div>
+    		<div class="contenedor_paseos i bg2" ></div>
     	</section>
 
 <script>
@@ -698,8 +1022,9 @@
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 	/*$('#intro').parallax("50%", -0.2);*/
 	$('#second').parallax("50%", 0.1);
-	$('.bg').parallax("50%", .1);
+	$('.bg').parallax("50%", .1, true);
 	$('#third').parallax("50%", 0.3);
+	$('.bg2').parallax("50%", .1);
 
 })
 </script>
