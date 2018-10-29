@@ -63,6 +63,7 @@
 
 	span {
 		font-size: 28px;
+		line-height: 1.2;
 	}
 		.cabecera {
 
@@ -159,7 +160,7 @@
 			font-family: 'Raleway', sans-serif;
 			font-size: 28px;
 			color: rgb(72, 57, 42);
-			padding: 3em;
+			padding: 2em 3em 3em 3em;
 
 		}
 
@@ -170,6 +171,7 @@
 		}
 
 		.isla_colores {
+			position: relative;
 			margin-top: 70vh;
 			background-image: url("img/islacolores.jpg");
 			height: 100vh;
@@ -189,6 +191,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			margin-bottom: 250px;
 		
 
 		}
@@ -266,6 +269,7 @@
 			position: relative;
 			top:-80px;
 			background-attachment: fixed;
+			background-size: cover;
 		}
 
 		
@@ -282,38 +286,44 @@
 		.a {
 			background: url("img/buceo.jpg")  50% 100cm  no-repeat fixed;
 			background-size: 110%;
-			height: 150vh;
+			height: 100vh;
 			
 		}
 
 		.b {
 			background: url("img/punda.jpg") 50% 100cm  no-repeat fixed;
 			background-size: 110%;
+			height: 120vh;
 		}
 
 		.c {
 			background: url("img/castillo.jpg")50% 100cm  no-repeat fixed;
 			background-size: 125%;
+			height: 120vh;
 		}
 
 		.d {
 			background: url("img/delfines.jpg")50% 100cm  no-repeat fixed;
 			background-size: 135%;
+			height: 100vh;
 		}
 
 		.e {
 			background: url("img/mambob.jpg")50% 100cm  no-repeat fixed;
 			background-size: 135%;
+			height: 100vh;
 		}
 
 		.f {
 			background: url("img/playa.jpg")50% 100cm  no-repeat fixed;
 			background-size: 155%;
+			height: 100vh;
 		}
 
 		.g {
 			background: url("img/playa2.jpg")50% 100cm  no-repeat fixed;
 			background-size: 165%;
+			height: 100vh;
 		}
 
 		.h {
@@ -324,7 +334,7 @@
 		}
 
 		.i {
-			background: url("img/aeropuerto.jpg") 50%   no-repeat fixed;
+			background: url("img/aeropuerto.jpg") no-repeat fixed;
 			background-size: 130%;
 			height: 250vh;
 			
@@ -334,13 +344,16 @@
 			display: flex;			
 			justify-content: center;
 			align-items: center;
+			position: absolute;
+    		bottom: -200px;
+    		left: 3em;
 		}
 
 		.isla_colores_nombre {
 			display: flex;			
 			justify-content: center;
 			align-items: center;
-			margin-top: 200px;
+			margin-top: 300px;
 		}
 
 			.unesco {
@@ -348,8 +361,8 @@
 			background-color: rgba(72, 57, 42, .8);			
 			padding: 15px 30px;
 			color: #FBF2C0;
-			margin-top: 90px;	
-			margin-top: 300px;		
+			margin-top: 90px;
+					
 		}
 
 		.piramide {
@@ -368,41 +381,90 @@
 		.iconos_hotel {
 			background-image:url('img/fondo.jpg');
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: space-around;
 			flex-wrap: wrap;
-
+			padding: 50px;
 			margin:3em 0;
+			margin-top: 100px;
 
 		}
 
 		.fotos_hotel {
+			/* border: 1px solid red; */
+			
 			margin: 3em;
-			text-align: center;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-gap:10em;	
-			grid-column-gap: 10px;
+			/* text-align: center; */
+			height: 450vh;	
+				
+		}
+
+		.fotos_hotel p {
+			margin: 30px;
+		}
+
+		.fotos_hotel p img {
+			transition: .5s;
+		}
+
+		.fotos_hotel p img:hover {
+			transform: scale(1.05);
+			
 		}
 
 		.hotel-foto {
-			
+		
+			max-width: 40%;
 		}
 
 		.texto-paseos-blanco {
 			color: #FBF2C0;
+			text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
 		}
 
 		.contenedor-textos-paseos{
 			width: 650px;
     		padding: 3em;
-    		background-color: rgba(72, 57, 42, .4);
+    		background-color: rgba(72, 57, 42, .6);
 		}
 
 		.contenedor-textos-paseos.right {
 			float: right;
 		}
 
+		.icon-item {
+			height: 100px;
+		}
 
+		.fotoletras {
+			max-width: 200px;
+		}
+
+		.contenedor-bienvenidos {
+			display: flex;
+		}
+
+		.fotos_hotel p:nth-of-type(2n) {
+			text-align: right;
+		}
+
+		.frase_celebre {
+
+			color: black;
+
+			position: relative;
+	margin: 200px auto;
+	padding: 1em;
+	max-width: 23em;
+	background: hsla(0,0%,100%,.25) border-box;
+	overflow: hidden;
+	border-radius: .3em;
+	box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,
+	            0 .5em 1em rgba(0, 0, 0, 0.6);
+	text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
+	line-height: 1.5;
+	font: 100%/1.6 Baskerville, Palatino, serif;	
+	font-style: italic;
+		}
 
 
 
@@ -464,13 +526,22 @@
 
     			<h1>VIENEN A CURACAO</h1>
 
-    			<div class="subtitulo">
+    			<div class="contenedor-bienvenidos">
+    				
+	    			<div class="subtitulo">
 
-    				<p> <span>
-    					¿Estás listo para vivir una experiencia inolvidable en Curaçao?
-    				</span>	  Podemos ayudarte a planear las mejores vacaciones de tu vida en esta isla caribeña escondida pero cautivadora. Las posibilidades son ilimitadas. ¡Empieza a planear hoy mismo!</p>
+	    				<p> <span>
+	    					¿Estás listo para vivir una experiencia inolvidable en Curaçao?
+	    				</span>	  Podemos ayudarte a planear las mejores vacaciones de tu vida en esta isla caribeña escondida pero cautivadora. Las posibilidades son ilimitadas. ¡Empieza a planear hoy mismo!</p>
+	    				
+	    			</div>
+
+	    			<div >
+	    				<img src="img/curacaoletras.jpeg" class="fotoletras subtitulo" alt="">
+	    			</div>
     				
     			</div>
+
 
     			<hr class="separador">
     			
@@ -510,7 +581,13 @@
     			</div>
 
 
-				<div class="isla_colores_nombre">
+				
+
+
+    			
+    		</div>
+
+    		<div class="isla_colores_nombre">
 					
 	    			<div class="subtitulo right">
 
@@ -531,10 +608,6 @@
 		    		</div>
 
 				</div>
-
-
-    			
-    		</div>
 
     		 <div class="unesco ">
 
@@ -606,27 +679,27 @@
     		</div>
 			    	<div class="iconos_hotel">
 			    		<p>
-			    			<img src="img/gente.png" alt="">
+			    			<img class="icon-item" src="img/gente.png" alt="">
 			    		</p>
 
 			    		<p>
-			    			<img src="img/wifi.png" alt="">
+			    			<img class="icon-item" src="img/wifi.png" alt="">
 			    		</p>
 
 			    		<p>
-			    			<img src="img/cajafuerte.png" alt="">
+			    			<img class="icon-item" src="img/cajafuerte.png" alt="">
 			    		</p>
 
 			    		<p>
-			    			<img src="img/gancho.png" alt="">
+			    			<img class="icon-item" src="img/gancho.png" alt="">
 			    		</p>
 
 			    		<p>
-			    			<img src="img/regalo.png" alt="">
+			    			<img class="icon-item" src="img/regalo.png" alt="">
 			    		</p>
 
 			    		<p>
-			    			<img src="img/isla.png" alt="">
+			    			<img class="icon-item" src="img/isla.png" alt="">
 			    		</p>
 
 			    	</div>
@@ -643,39 +716,41 @@
 
 	    		<div class="fotos_hotel">
 			    		
-			    		<p class="hotel-foto">
-			    			<img src="img/clarion2.jpg" width="200px" alt="">
+			    		<p >
+			    			<img src="img/clarion2.jpg" class="hotel-foto" alt="" >
+			    		</p>    		
+
+
+				    	<p>
+				    		<img src="img/clarion3.jpg" class="hotel-foto" alt="" >
+				    	</p>		    						    	
+
+
+			    		<p>
+			    			<img src="img/clarion4.jpg" class="hotel-foto" alt="" >
 			    		</p>
 
-			    		<p class="hotel-foto">
-			    			<img src="img/clarion3.jpg" width="200px" alt="">
+			    		<p>
+			    			<img src="img/clarion5.jpg" class="hotel-foto" alt="">
 			    		</p>
 
-			    		<p class="hotel-foto">
-			    			<img src="img/clarion4.jpg" width="350px" alt="">
-			    		</p>
-
-			    		<p class="hotel-foto">
-			    			<img src="img/clarion5.jpg" width="400px" alt="">
-			    		</p>
-
-			    		<p class="hotel-foto">
-			    			<img src="img/clarion6.jpg" width="300px" alt="">
+			    		<p>
+			    			<img src="img/clarion6.jpg" class="hotel-foto" alt="" >
 			    		</p >
-						<p class="hotel-foto">
-			    			<img src="img/clarion7.jpg" width="150px" alt="">
+						<p>
+			    			<img src="img/clarion7.jpg" class="hotel-foto" alt="">
 			    		</p>
-						<p class="hotel-foto">
-			    			<img src="img/clarion8.jpg" width="250px" alt="">
+						<p>
+			    			<img src="img/clarion8.jpg" class="hotel-foto" alt="" >
 			    		</p>
-						<p class="hotel-foto">
-			    			<img src="img/clarion9.jpg" width="100px" alt="">
+						<p>
+			    			<img src="img/clarion9.jpg" class="hotel-foto" alt="" >
 			    		</p>
-						<p class="hotel-foto">
-			    			<img src="img/clarion10.jpg" width="400px" alt="">
+						<p>
+			    			<img src="img/clarion10.jpg"class="hotel-foto" alt="" >
 			    		</p>
-						<p class="hotel-foto">
-			    			<img src="img/clarion11.jpg" width="300px" alt="">
+						<p>
+			    			<img src="img/clarion11.jpg" class="hotel-foto" alt="" >
 			    		</p>
 
 			    	</div>
@@ -836,9 +911,11 @@
     		<div class="contenedor_paseos b bg" >
     			
     			<div class="contenedor-textos-paseos">
-    				<p class="texto-paseos-blanco">Las vibrantes calles peatonales evocan un ambiente pintoresco, repleto de tiendas, cafés y terrazas convenientemente ubicados en una misma área.
 
-Paseándose por uno de los centros más hermosos en todo el mundo, usted descubrirá fantásticos sitios para tomarse fotos. Las vistosas calles y callejuelas de Punda, repletas de vida y color, lo llevan a algunas de las mejores tiendas de la isla, en donde encontrará una variedad de joyas, productos electrónicos, cosméticos, moda para damas y caballeros y suvenires de la isla. </span>
+    				<h1>Punda</h1>
+    				<p class="texto-paseos-blanco"><span>Las vibrantes calles peatonales evocan un ambiente pintoresco, repleto de tiendas, cafés y terrazas convenientemente ubicados en una misma área. </span>
+
+					Paseándose por uno de los centros más hermosos en todo el mundo, usted descubrirá <span>fantásticos sitios para tomarse fotos.</span> Las vistosas calles y callejuelas de Punda, repletas de vida y color, lo llevan a algunas de las mejores tiendas de la isla, en donde encontrará una variedad de joyas, productos electrónicos, cosméticos, moda para damas y caballeros y suvenires de la isla. </span>
 
 
 					</p>
@@ -846,20 +923,21 @@ Paseándose por uno de los centros más hermosos en todo el mundo, usted descubr
 
     			<div class="contenedor-textos-paseos right">
     				<p class="texto-paseos-blanco">
-    					¡Relájese en uno de los muchos cafés y terrazas, y disfrute de un desayuno, almuerzo, o cena, o de un refrescante coctel!. Todos los jueves en la noche, Punda se convierte en el escenario del famoso Punda Vibes. La misión del Punda Vibes es procurar que usted se enamore de nuestra “dushi” Punda.
+    					<span>¡Relájese en uno de los muchos cafés y terrazas,</span> y disfrute de un desayuno, almuerzo, o cena, o de un refrescante coctel!. Todos los jueves en la noche, Punda se convierte en el escenario del famoso Punda Vibes. La misión del Punda Vibes es procurar que usted se enamore de nuestra “dushi” Punda.
 
-¡Las actividades se organizan para garantizar una agradable noche de compras, música en vivo, excelentes shows locales y buena comida con sus familiares y amigos!. Punda también cuenta con una vibrante comunidad artística. En sus calles encontrará una variedad de murales e impresionantes tiendas de arte de artistas locales. La mayoría de las tiendas de arte están ubicadas en la calle Winsdtraat, mejor conocida como el Callejón Artístico.
+					<span>¡Las actividades se organizan para garantizar una agradable noche de compras, música en vivo, excelentes shows locales y buena comida con sus familiares y amigos!.</span> Punda también cuenta con una vibrante comunidad artística. En sus calles encontrará una variedad de murales e impresionantes tiendas de arte de artistas locales. La mayoría de las tiendas de arte están ubicadas en la calle Winsdtraat, mejor conocida como el Callejón Artístico.
 
     				</p>
     			</div>
     		</div>
     		<div class="contenedor_paseos c bg" >
     			<div class="contenedor-textos-paseos">
-    				<p class="texto-paseos-blanco">El Fuerte Beekenburg (en neerlandés: Fort Beekenburg) ​(También conocido como El Castillo o Het Kasteel) es una fortaleza en Curazao​ en medio de la Bahía de Caracas​ (Caracasbaai) en las Antillas Menores.
+    				<h1>Fuerte Beekenburg</h1>
+    				<p class="texto-paseos-blanco">El Fuerte Beekenburg (en neerlandés: Fort Beekenburg) ​(También conocido como El Castillo o Het Kasteel) es una fortaleza en Curazao​ en medio de la Bahía de Caracas​ (Caracasbaai) en las Antillas Menores. <br><br>
 
-El Fuerte Beekenburg fue construido en 1703 con el objeto de proporcionar una mejor defensa del área contra los ataques españoles.
+					<span>El Fuerte Beekenburg fue construido en 1703 con el objeto de proporcionar una mejor defensa del área contra los ataques españoles.</span>
 
-Fue uno de los pocos lugares adecuados para acceder desde el mar a la tierra. Por lo tanto, se decidió construir una fortaleza para hacer inaccesible Willemstad a los enemigos.</span>
+					Fue uno de los pocos lugares adecuados para acceder desde el mar a la tierra. Por lo tanto, se decidió construir una fortaleza para hacer inaccesible Willemstad a los enemigos.</span>
 
 
 					</p>
@@ -867,15 +945,16 @@ Fue uno de los pocos lugares adecuados para acceder desde el mar a la tierra. Po
 
     			<div class="contenedor-textos-paseos right">
     				<p class="texto-paseos-blanco">
-    					El fuerte recibe nombre de Sir Brook entre 1701 y 1704 que coordinó la defensa de la ciudad. Durante el siglo 18, la fortaleza sufrió varios ataques de las tropas francesas y británicas. En un determinado momento, los británicos trataron de eludir el fuerte usando la montaña adyacente. Sin embargo, esto causó tantos problemas y tomó tanto tiempo que el plan se suspendió y se decidió la retirada antes de que los holandeses hubiesen reunido sus tropas. De 1800 a 1803 y desde 1807 hasta 1816 Curazao estuvo bajo breve ocupación de los británicos. Varias veces Fort Beekenburg fue atacado por piratas, sin éxito.
+    					<span>El fuerte recibe nombre de Sir Brook entre 1701 y 1704 que coordinó la defensa de la ciudad. Durante el siglo 18, la fortaleza sufrió varios ataques de las tropas francesas y británicas.</span> <br><br>En un determinado momento, los británicos trataron de eludir el fuerte usando la montaña adyacente. Sin embargo, esto causó tantos problemas y tomó tanto tiempo que el plan se suspendió y se decidió la retirada antes de que los holandeses hubiesen reunido sus tropas. <br><br>De 1800 a 1803 y desde 1807 hasta 1816 Curazao estuvo bajo breve ocupación de los británicos. <span>Varias veces Fort Beekenburg fue atacado por piratas, sin éxito.</span>
     				</p>
     			</div>
     		</div>
     		<div class="contenedor_paseos d bg" >
     			<div class="contenedor-textos-paseos">
-    				<p class="texto-paseos-blanco">Esnórkel en Curazao y Buceo – Un Maravilloso Mundo de Posibilidades Acuáticas
+    				<h1>Buceo</h1>
+    				<p class="texto-paseos-blanco"><span>Esnórkel en Curazao y Buceo – Un Maravilloso Mundo de Posibilidades Acuáticas</span> <br><br>
 
-Los buzos y practicantes del snórkel no pueden dejar de hablar de la belleza del mundo submarino de Curazao. Déjenme asegurarles que tenemos una buena razón. Nos gusta pensar que no hay lugar en el mundo que ofrezca tanta variedad de grandes playas para hacer submarinismo u oportunidades para disfrutar la belleza de la naturaleza del mar mientras práctica snórkel. Curazao buceo y esnórkel comprende 40 áreas que incluyen 65 sitios individuales..
+					Los buzos y practicantes del snórkel no pueden dejar de hablar de la belleza del mundo submarino de Curazao. Déjenme asegurarles que tenemos una buena razón. Nos gusta pensar que no hay lugar en el mundo que ofrezca tanta variedad de grandes playas para hacer submarinismo u oportunidades para disfrutar la belleza de la naturaleza del mar mientras práctica snórkel. <br><br><span>Curazao buceo y esnórkel comprende 40 áreas que incluyen 65 sitios individuales.. </span> 
 
 					</p>
     			</div>
@@ -884,9 +963,11 @@ Los buzos y practicantes del snórkel no pueden dejar de hablar de la belleza de
     		</div>
     		<div class="contenedor_paseos e bg" >
     			<div class="contenedor-textos-paseos">
-    				<p class="texto-paseos-blanco">Mambo Beach Boulevard ofrece grandes tiendas y restaurantes. No son lugares tradicionales, pero hay marcas locales e internacionales para darse el gusto, comprar excelentes regalos, tratarse a un lindo almuerzo o hermosa cena en unos de nuestros restaurantes o tomar un trago en uno de nuestros cafés o bares.
 
-Querrá zambullirse en el océano azul claro de Sea Aquarium Beach, ¡pero cómprese primero ese nuevo bikini! Siempre hay algo en el BLVD, cada hora del día.
+    				<h1>Mambo Beach Boulevard BLVD</h1>
+    				<p class="texto-paseos-blanco"> <span>Mambo Beach Boulevard ofrece grandes tiendas y restaurantes.</span> No son lugares tradicionales, pero hay marcas locales e internacionales para darse el gusto, comprar excelentes regalos, tratarse a un lindo almuerzo o hermosa cena en unos de nuestros restaurantes o tomar un trago en uno de nuestros cafés o bares. <br><br>
+
+					<span>Querrá zambullirse en el océano azul claro de Sea Aquarium Beach, </span>¡pero cómprese primero ese nuevo bikini! Siempre hay algo en el BLVD, cada hora del día.
 
 
 					</p>
@@ -895,9 +976,10 @@ Querrá zambullirse en el océano azul claro de Sea Aquarium Beach, ¡pero cómp
     		</div>
     		<div class="contenedor_paseos f bg" >
     			<div class="contenedor-textos-paseos">
-    				<p class="texto-paseos-blanco">Casi todas las playas de Curazao están diseminadas a lo largo de la calma y protegida costa suroeste, donde las aguas son calmas y limpias como un cristal. En algunas playas se cobra la admisión, algunas veces incluyendo una playera.
-A pesar de que no es común, ni una práctica aceptable, podrá ver visitantes europeas tomando el sol en topless. Por favor tome en cuenta que no está permitido por la ley, pero que es tolerado en muchas playas.
-Hay lugares de los cuales elegir para poder relajarse, incluyendo un Complejo turístico al lado del mar ganador de premios.
+    				<h1>Playas</h1>
+    				<p class="texto-paseos-blanco">Casi todas las playas de Curazao están diseminadas a lo largo de la calma y protegida costa suroeste, donde <span>las aguas son calmas y limpias como un cristal.</span> En algunas playas se cobra la admisión, algunas veces incluyendo una playera.
+					A pesar de que no es común, ni una práctica aceptable, podrá ver visitantes europeas tomando el sol en topless. Por favor tome en cuenta que no está permitido por la ley, pero que es tolerado en muchas playas.
+					
 
 
 					</p>
@@ -922,10 +1004,10 @@ Hay lugares de los cuales elegir para poder relajarse, incluyendo un Complejo tu
     			
     		</div>
 
-    		<div class="contenedor-textos-paseos" style="position:absolute;">
+    		<div class="contenedor-textos-paseos texto-paseos-blanco" style="position:absolute; left:5%; margin-top: 500px; line-height: 3; zoom:1.5; text-align: center;">
     				<p class="texto-paseos-blanco">Ciudades de Operación: <br>
 
-    					<ul>
+    					<ul style="list-style: none;">
     						
 							<li>
 								Bogotá
@@ -935,69 +1017,78 @@ Hay lugares de los cuales elegir para poder relajarse, incluyendo un Complejo tu
 							</li>	
 							<li>
 								Medellín
-							</li>
+							</li> 
+
+							<br><br>
 							
 							
     						
     					</ul>
 
 
-						Llegada a Aeropuerto: 9:00 p.m. <br><br>
-						Salida del vuelo: 12:00 a.m. <br> <br>
-						Duración del vuelo: 1 hora 45 minutos <br> <br>
+						Llegada a Aeropuerto: 9:00 p.m. <br>
+						Salida del vuelo: 12:00 a.m. <br> 
+						Duración del vuelo: 1 hora 45 minutos <br> <br><br>
 
-						Llegada al aeropuerto <br> <br>
+						<span>Llegada al aeropuerto </span> <br>
 
-						<ul>
+						<ul style="list-style: none;">
 							
-						<li> Llegada a inmigración</li>
-						<li> Recogida de los buses que llevan a los huéspedes al hotel</li>
-						<li>Trayecto para el On Vacation Curacao Beach: 20 minutos</li>
+							<li> Llegada a inmigración</li>
+							<li> Recogida de los buses que llevan a los huéspedes al hotel</li>
+							<li>Trayecto para el On Vacation Curacao Beach: 20 minutos</li>
 							
 						</ul>
+						<br><br>
 
 
-						Llegada al hotel <br><br>
+						<span>Llegada al hotel</span> <br>
 
-						Check in en Hotel <br> <br> 
+						Check in en Hotel <br> 
 
-						Reunión de toures con Fiesta Tour: 11 a.m. <br><br>
+						Reunión de toures con Fiesta Tour: 11 a.m. <br>
 
 						Las tarjetas de
 						Colombia débito y
 						crédito funcionan
-						en Curacao. <br> <br>
+						en Curacao. <br> 
 
 						Es necesario tener
-						el pasaporte al día. <br> <br>
+						el pasaporte al día. <br> 
 						Los menores de edad que
 						viajan sin sus padres
 						debe tener el permiso de
 						salida notariado por los
-						padres. <br><br>
+						padres. <br>
 
 						La hora en Curacao es
 						una hora mas que en
-						Colombia. <br><br>
+						Colombia. <br><br> <br>
 
 
-						Regreso a la cuidad de origen <br> <br>
+						<span>Regreso a la cuidad de origen</span> <br> 
 
 						Entrega de habitación a las 3 p.m después del almuerzo. <br>
 						Salida de hotel a Aeropuerto. <br>
-						Duracion vuelo a ciudad de origen: 1 hora y 40 minutos. <br>
+						Duracion vuelo a ciudad de origen: 1 hora y 40 minutos. <br> <br><br>
 
 
 
-						Llevar cobija en su
-						equipaje de mano.
-
+						<span>Llevar cobija en su
+						equipaje de mano.</span>	
 
 					</p>
+					<div class="frase_celebre">
+
+							“Viajar es una brutalidad. Te obliga a confiar en extraños y a perder de vista todo lo que te resulta familiar y confortable de tus amigos y tu casa. Estás todo el tiempo en desequilibrio. Nada es tuyo excepto lo más esencial: el aire, las horas de descanso, los sueños, el mar, el cielo; todas aquellas cosas que tienden hacia lo eterno o hacia lo que imaginamos como tal”. <br><br>– Cesare Pavese
+							
+							 <p style="font-size: 12px;">https://matadornetwork.com/es/las-50-frases-sobre-viajes-mas-inspiradoras-de-todos-los-tiempos/</p>
+						</div>
     			</div>
 
     		<div class="contenedor_paseos h bg2" ></div>
     		<div class="contenedor_paseos i bg2" ></div>
+    		
     	</section>
 
 <script>
