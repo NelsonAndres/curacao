@@ -46,7 +46,9 @@
 
 	
 </style>
-<body>
+<body onscroll="ejectutar()">
+
+
 
 	<div class="contenedor">
 		
@@ -59,7 +61,33 @@
 
 	</div>
 
+	    				<video src="img/curacao.mp4" id="demo" ></video>
+
+	    				
+<div>
+  <button onclick="document.getElementById('demo').play()">Reproducir el Audio</button>
+  <button onclick="document.getElementById('demo').pause()">Pausar el Audio</button>
+  <button onclick="document.getElementById('demo').volume+=0.1">Aumentar el Volumen</button>
+  <button onclick="document.getElementById('demo').volume-=0.1">Disminuir el Volumen</button>
+</div>
+	
+	<script>
+		let $videoCallado = document.getElementById('demo')
+			
+			$videoCallado.volume = 0; 	
+
+			console.log($videoCallado)
+
+			function ejectutar() {
+				
+				$videoCallado.play();
+			}
+
+	</script>
+
 
 	
 </body>
+
+
 </html>

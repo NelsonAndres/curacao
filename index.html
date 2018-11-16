@@ -64,6 +64,15 @@
 	span {
 		font-size: 28px;
 		line-height: 1.2;
+		color: #FBF2C0;
+	}	
+
+	cite {
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    /* color: gray; */
+    position: absolute;
+    bottom: 115px;
+    right: 20px;
 	}
 		.cabecera {
 
@@ -72,7 +81,8 @@
 			align-items: center;
 			position: fixed;
 
-			width: 100vw;		
+			width: 100vw;	
+			z-index: 2;	
 
 		}
 
@@ -81,6 +91,23 @@
 			position: relative;
 
 			left: -85px;
+		}
+
+
+
+		.contacto {
+			display: flex;
+			color: white;
+			align-items: center;
+			transform: scale(.8);
+		}
+
+		.contacto p {
+			margin: 0 20px 0 0;
+		}
+
+		.contacto a {
+			color: white;
 		}
 
 		.intro	{
@@ -99,6 +126,10 @@
 		.logo_nelson {
 			position: relative;
     		right: -34px;
+		}
+
+		.fab {
+			padding:2px;
 		}
 
 		.titulo {
@@ -466,6 +497,34 @@
 	font-style: italic;
 		}
 
+	.barra-final {
+		background: black;
+		height: 200px;
+		width:100%;
+	}
+
+	.conclusion {
+
+		background: #43281C;
+		text-align: center;
+
+	}
+
+	.conclusion-texto {
+		padding: 30px;
+	}
+
+	.creditos {
+		font-size: 16px;
+		padding: 20px;
+	}
+
+	.barra-final {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 
 
 
@@ -478,7 +537,7 @@
     </head>
 
 
-    <body>
+    <body onscroll="ejectutar()">
 
     	<section class="cabecera"> 
 
@@ -493,10 +552,10 @@
 
 	    		<div >
 	    			
-		    		<i class="fab fa-facebook fa-3x"></i>
-					<i class="fab fa-instagram fa-3x "></i>
-					<i class="fab fa-youtube fa-3x "></i>
-					<i class="fab fa-whatsapp-square fa-3x"></i>
+		    		<a href="https://www.facebook.com/nelson.onvacation" target="blank"><i class="fab fa-facebook fa-3x"></i></a>
+					<a href=""><i class="fab fa-instagram fa-3x"></i></a>
+					<a href=""><i class="fab fa-youtube fa-3x "></i></a>
+					<a href=""><i class="fab fa-whatsapp-square fa-3x"></i></a>
 	    			
 	    		</div>
     			
@@ -518,6 +577,8 @@
     			<p class="logoCuracao">
     				<img src="img/logoCuracao.png" alt="">
     			</p>
+
+    			<cite> Foto: On Vacation</cite>
     		</div>
 
     		<div class="titulo">
@@ -537,7 +598,10 @@
 	    			</div>
 
 	    			<div >
-	    				<img src="img/curacaoletras.jpeg" class="fotoletras subtitulo" alt="">
+
+	    				<video src="img/curacao.mp4" class="fotoletras subtitulo" id="demo"></video>
+	    				<cite> Video: On Vacation</cite>
+	    				<!-- <img src="img/curacaoletras.jpeg" class="fotoletras subtitulo" alt=""> -->
 	    			</div>
     				
     			</div>
@@ -580,7 +644,7 @@
     				
     			</div>
 
-
+				<cite style="bottom: 20px;"> Foto: On Vacation</cite>
 				
 
 
@@ -589,7 +653,7 @@
 
     		<div class="isla_colores_nombre">
 					
-	    			<div class="subtitulo right">
+	    			<div class="subtitulo right" style="position: relative;">
 
 	    				<p><span>El origen del nombre Curazao:</span> <br><br>
 
@@ -597,7 +661,7 @@
 
 							Por ello, bautizaron la isla como Ilha da Curação (en portugués, «Isla de la Curación»). Tras la conquista neerlandesa el nombre quedó finalmente como Curaçao. <br><br>
 
-							Fuente: https://es.wikipedia.org/wiki/Curazao</p>
+							<cite style="bottom: 20px; color:black;"> <a href="https://es.wikipedia.org/wiki/Curazao" target="blank" style="color: black; text-shadow: none;">Fuente: wikipedia</a></cite></p>
 	    				
 	    			</div>
 					<div class="div">
@@ -609,14 +673,14 @@
 
 				</div>
 
-    		 <div class="unesco ">
+    		 <div class="unesco " style="position: relative;">
 
     				<p>La Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura (UNESCO) está comprometida a preservar la cultura y el patrimonio de las grandes ciudades del mundo y el listado de lugares catalogados como Patrimonio Mundial más reciente incluye sitios como: las Pirámides de Egipto, la Gran Barrera de Coral en Australia, el Serengueti al oriente de África y Willemstad en Curaçao. <br><br>
 
 					<span>En 1997, el comité del Patrimonio Mundial de la UNESCO escogió este centro histórico (uno de tan solo seis sitios elegidos del Caribe) gracias a su “destacado valor e integridad que ilustra el crecimiento orgánico de una comunidad multicultural durante los últimos tres siglos, preservando en gran medida los elementos significativos”. <br><br>
 
-					Para obtener más información visite: www.unesco.org
 					</span>
+					<cite style="bottom: 20px;"> <a href="www.unesco.org" style="color: black; text-shadow: none;">Para obtener más información visite: www.unesco.org</a></cite>
 					</p>	
     				
     			</div>
@@ -673,6 +737,8 @@
 		    		
 		    	</div>
 
+		    	<cite style="bottom: 20px">Foto: On Vacation</cite>
+
 
 
 
@@ -703,7 +769,7 @@
 			    		</p>
 
 			    	</div>
-	    		<div class="subtitulo-sinfondo">     			
+	    		<div class="subtitulo-sinfondo" style="position: relative;">     			
 
 					Servicio de lavandería, alquiler de botes, tienda de regalos y un mostrador de paseos están localizados en la propiedad como conveniencia para los huéspedes.
 					<br><br>
@@ -711,10 +777,10 @@
 					A distancia de ir caminando, hay una linda playa con servicios de buceo.
 					<br><br>
 
-					Fuente: https://www.curacao.com/es/directory/Alojese/grandes-hoteles/clarion-hotel-and-suites-curacao/# 
+					<cite style="bottom: 20px"> <a href="https://www.curacao.com/es/directory/Alojese/grandes-hoteles/clarion-hotel-and-suites-curacao/#" target="blank" style="font-size: 18px; color: black; text-shadow: none;">Fuente: https://www.curacao.com/es/directory/Alojese/grandes-hoteles/clarion-hotel-and-suites-curacao/#</a></cite> 
 	    		</div>
 
-	    		<div class="fotos_hotel">
+	    		<div class="fotos_hotel" style="position: relative;">
 			    		
 			    		<p >
 			    			<img src="img/clarion2.jpg" class="hotel-foto" alt="" >
@@ -753,6 +819,8 @@
 			    			<img src="img/clarion11.jpg" class="hotel-foto" alt="" >
 			    		</p>
 
+			    		<cite>Fotos: On Vacation</cite>
+
 			    	</div>
 
     	</section>			
@@ -767,11 +835,11 @@
     		<h1>plan todo incluido	</h1> 
 
     			
-    	</div>
+    		</div>
 
-    	<div class="contenedor_tablas">
+    		<div class="contenedor_tablas">
     		
-	    	<div class="tabla">
+	    		<div class="tabla">
 	    			<div class="izq">
 
 	    				<p style="color:#FC6336;">Nuestro plan	</p> 
@@ -865,6 +933,8 @@
     	</div>
 
     	<div class="imagen_todo_incluido">
+
+    		<cite style="bottom: 20px">Foto: On Vacation</cite>
     		
     	</div>
     		
@@ -885,7 +955,7 @@
 
     		</div>
 
-    		<div class="contenedor_paseos a bg" >
+    		<div class="contenedor_paseos a bg" style="position: relative;">
     			<div class="contenedor-textos-paseos">
     				<p class="texto-paseos-blanco">Curazao ofrece infinidad de deportes y actividades:  <br><br>
 
@@ -907,17 +977,20 @@
     				</p>
     			</div>
 
+
+    				<a href="https://www.curacao.com/es/stories/deportes-y-actividades/" target="blank" style="font-size: 18px; color: #FBF2C0; position: absolute; bottom: 20px; left: 20px">Fuente: https://www.curacao.com/es/stories/deportes-y-actividades/</a>
+
     		</div>
-    		<div class="contenedor_paseos b bg" >
     			
-    			<div class="contenedor-textos-paseos">
+    			
+    		<div class="contenedor_paseos b bg" style="position: relative;">
+    			
+    			<div class="contenedor-textos-paseos"> 
 
     				<h1>Punda</h1>
     				<p class="texto-paseos-blanco"><span>Las vibrantes calles peatonales evocan un ambiente pintoresco, repleto de tiendas, cafés y terrazas convenientemente ubicados en una misma área. </span>
 
 					Paseándose por uno de los centros más hermosos en todo el mundo, usted descubrirá <span>fantásticos sitios para tomarse fotos.</span> Las vistosas calles y callejuelas de Punda, repletas de vida y color, lo llevan a algunas de las mejores tiendas de la isla, en donde encontrará una variedad de joyas, productos electrónicos, cosméticos, moda para damas y caballeros y suvenires de la isla. </span>
-
-
 					</p>
     			</div>
 
@@ -928,9 +1001,16 @@
 					<span>¡Las actividades se organizan para garantizar una agradable noche de compras, música en vivo, excelentes shows locales y buena comida con sus familiares y amigos!.</span> Punda también cuenta con una vibrante comunidad artística. En sus calles encontrará una variedad de murales e impresionantes tiendas de arte de artistas locales. La mayoría de las tiendas de arte están ubicadas en la calle Winsdtraat, mejor conocida como el Callejón Artístico.
 
     				</p>
+
     			</div>
+    				<div class="contenedor-textos-paseos">
+    					
+    				<a href="https://www.curacao.com/es/stories/deportes-y-actividades/" target="blank" style="font-size: 18px; color: #FBF2C0; position: absolute; bottom: 20px; left: 20px">Fuente: https://www.curacao.com/es/stories/deportes-y-actividades/</a>
+    				</div>
+
+    				
     		</div>
-    		<div class="contenedor_paseos c bg" >
+    		<div class="contenedor_paseos c bg" style="position: relative;">
     			<div class="contenedor-textos-paseos">
     				<h1>Fuerte Beekenburg</h1>
     				<p class="texto-paseos-blanco">El Fuerte Beekenburg (en neerlandés: Fort Beekenburg) ​(También conocido como El Castillo o Het Kasteel) es una fortaleza en Curazao​ en medio de la Bahía de Caracas​ (Caracasbaai) en las Antillas Menores. <br><br>
@@ -948,8 +1028,11 @@
     					<span>El fuerte recibe nombre de Sir Brook entre 1701 y 1704 que coordinó la defensa de la ciudad. Durante el siglo 18, la fortaleza sufrió varios ataques de las tropas francesas y británicas.</span> <br><br>En un determinado momento, los británicos trataron de eludir el fuerte usando la montaña adyacente. Sin embargo, esto causó tantos problemas y tomó tanto tiempo que el plan se suspendió y se decidió la retirada antes de que los holandeses hubiesen reunido sus tropas. <br><br>De 1800 a 1803 y desde 1807 hasta 1816 Curazao estuvo bajo breve ocupación de los británicos. <span>Varias veces Fort Beekenburg fue atacado por piratas, sin éxito.</span>
     				</p>
     			</div>
+
+    			<a href="https://es.wikipedia.org/wiki/Fuerte_Beekenburg" target="blank" style="font-size: 18px; color: #FBF2C0; position: absolute; bottom: 20px; left: 20px">Fuente: https://es.wikipedia.org/wiki/Fuerte_Beekenburg</a>
+    				
     		</div>
-    		<div class="contenedor_paseos d bg" >
+    		<div class="contenedor_paseos d bg" style="position: relative;">
     			<div class="contenedor-textos-paseos">
     				<h1>Buceo</h1>
     				<p class="texto-paseos-blanco"><span>Esnórkel en Curazao y Buceo – Un Maravilloso Mundo de Posibilidades Acuáticas</span> <br><br>
@@ -959,9 +1042,9 @@
 					</p>
     			</div>
 
-    			
+    			<a href="https://www.curacao.com/es/directory/Haga/buceo/" target="blank" style="font-size: 18px; color: #FBF2C0; position: absolute; bottom: 20px; left: 20px">Fuente: https://www.curacao.com/es/directory/Haga/buceo/</a>
     		</div>
-    		<div class="contenedor_paseos e bg" >
+    		<div class="contenedor_paseos e bg" style="position: relative;">
     			<div class="contenedor-textos-paseos">
 
     				<h1>Mambo Beach Boulevard BLVD</h1>
@@ -972,9 +1055,11 @@
 
 					</p>
     			</div>
+
+    			<a href="https://www.curacao.com/es/directory/Haga/compras-y-derroche/curacao-beach-boulevard-blvd/" target="blank" style="font-size: 18px; color: #FBF2C0; position: absolute; bottom: 20px; left: 20px">Fuente: https://www.curacao.com/es/directory/Haga/compras-y-derroche/curacao-beach-boulevard-blvd/</a>
     			
     		</div>
-    		<div class="contenedor_paseos f bg" >
+    		<div class="contenedor_paseos f bg" style="position: relative;">
     			<div class="contenedor-textos-paseos">
     				<h1>Playas</h1>
     				<p class="texto-paseos-blanco">Casi todas las playas de Curazao están diseminadas a lo largo de la calma y protegida costa suroeste, donde <span>las aguas son calmas y limpias como un cristal.</span> En algunas playas se cobra la admisión, algunas veces incluyendo una playera.
@@ -984,6 +1069,8 @@
 
 					</p>
     			</div>
+
+    			<a href="https://www.curacao.com/es/directory/Haga/playas/" target="blank" style="font-size: 18px; color: #FBF2C0; position: absolute; bottom: 20px; left: 20px">Fuente: https://www.curacao.com/es/directory/Haga/playas/</a>
     			
     		</div>
     		<div class="contenedor_paseos g bg" >
@@ -1004,7 +1091,7 @@
     			
     		</div>
 
-    		<div class="contenedor-textos-paseos texto-paseos-blanco" style="position:absolute; left:5%; margin-top: 500px; line-height: 3; zoom:1.5; text-align: center;">
+    		<div class="contenedor-textos-paseos texto-paseos-blanco" style="position:absolute; left:5%; margin-top: 500px; line-height: 3; zoom:1.5; text-align: center; height: 2200px;">
     				<p class="texto-paseos-blanco">Ciudades de Operación: <br>
 
     					<ul style="list-style: none;">
@@ -1091,7 +1178,76 @@
     		
     	</section>
 
+    	<section>
+    		<div class="barra-final"></div>
+    		<div class="conclusion">
+    			<img src="img/flecha.png" alt="flecha" height="100px" style="padding-top: 30px">
+				<p class="conclusion-texto"><span >	Ahora que has descubierto <br>la magia de Curacao</span></p>
+				<img src="img/conclusion.png" height="280px" alt="">
+
+				<p class="conclusion-texto"><span >	O si tienes dudas aún... no importa, <br>comunicate conmigo</span></p>
+
+    		</div>
+    	</section>
+
+    	<section>
+    		<p class="creditos">Fuentes: <br><br>
+
+Las siguientes páginas web contienen toda la información que usé para diseñar este sitio. Las publico no solo por derechos de autor sino también para que cualquier turista curioso pueda profundizar mas acerca de cualquier item tratado en este sitio. <br><br>
+
+https://es.wikipedia.org/wiki/Curazao <br><br>
+
+www.unesco.org <br><br>
+
+https://www.curacao.com/es/directory/Alojese/grandes-hoteles/clarion-hotel-and-suites-curacao/# <br><br>
+
+https://www.curacao.com/es/stories/deportes-y-actividades/ <br><br>
+
+https://es.wikipedia.org/wiki/Fuerte_Beekenburg <br><br>
+
+https://www.curacao.com/es/directory/Haga/buceo/ <br><br>
+
+https://www.curacao.com/es/directory/Haga/compras-y-derroche/curacao-beach-boulevard-blvd/ <br><br>
+
+https://matadornetwork.com/es/las-50-frases-sobre-viajes-mas-inspiradoras-de-todos-los-tiempos/ <br><br><br><br>
+
+
+Todas las fotografías e información acerca del plan todo incluido On Vacation fueron tomadas del brochure On Vacation Curacao 2018. Para mas información: <br><br>
+
+https://www.onvacation.com/ <br><br>
+
+Ninguna foto o información incluida en este sitio es de mi autoria, el motivo de este sitio es crear un motivacional para que el turista que lo vea decida viajar. Si de pronto omití un crédito o no tengo derecho a publicar alguna imagen o información por favor indíquemelo en cualquier enlace a redes sociales y lo corregiré de inmediato. <br><br><br><br> 
+
+Hecho con todo mi cariño: <br><br>
+
+Nelson Alayón Diseñador gráfico, Diseñador Web, ejecutivo de ventas On Vacation, y proximamente tatuador en henna.</p>
+
+    	<div class="barra-final">
+    		<p class="logo_nelson-final">
+    			<img src="img/logoNelson.png" width="105px" alt="">
+    		</p>
+
+    		<p class="onvacation_logo-final">
+    			<img src="img/onvacation.png" width="130px" alt="">
+    		</p>
+    	</div>
+    	</section>
+
+
 <script>
+
+	/*funcion para reproducir el video del intro de la pagina
+*/
+	let $videoCallado = document.getElementById('demo')
+			
+			$videoCallado.volume = 0; 	
+
+			console.log($videoCallado)
+
+			function ejectutar() {
+				
+				$videoCallado.play();
+			}
 
 	/*function parallax() {
 		let n = window.pageYOffset;
